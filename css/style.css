@@ -16,16 +16,53 @@ body {
 .container {
   height: 95%;
   width: 85%;
-  background: #fff;
   display: flex;
 }
-
+/* LEFT */
 .container aside {
   flex-basis: 35%;
-  background: #ccc;
+  display: flex;
+  flex-direction: column;
 }
-
+/* USER */
+.container aside .user {
+  background: #eaeaea;
+  padding: 20px;
+}
+/* NOTIFICATIONS */
+.container aside .notifications {
+  padding: 20px;
+  background: #8EDAFC;
+}
+/* SEARCH */
+.container aside .search {
+  padding: 20px;
+  background: #FAFAFA;
+}
+/* CONTACTS */
+.container aside .contacts {
+  background: #fff;
+  flex-grow: 1;
+}
+/* RIGHT */
 .container main {
   flex-basis: 65%;
-  background: #aaa;
+  display: flex;
+  flex-direction: column;
+}
+/* HEADER */
+.container main .header {
+  background: #eaeaea;
+  padding: 20px;
+}
+/* CENTRAL */
+.container main .central {
+  background-image: url('../img/mine.jpg');
+  flex-grow: 1;
+  overflow-y: auto;
+}
+/* FOOTER */
+.container main .footer {
+  background: #f3eeea;
+  padding: 20px;
 }
