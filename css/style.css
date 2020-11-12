@@ -12,15 +12,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* UTILITY */
-.icons {
-  width: 15%;
-  font-size: 20px;
-  color: #b1b1b1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .container {
   height: 95%;
@@ -43,9 +34,27 @@ body {
   align-items: center;
 }
 
+.container aside .user .user-image {
+  display: flex;
+  align-items: center;
+}
+
 .container aside .user .user-image img {
   height: 50px;
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container aside .user .icons-left {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container aside .user .icons-left i {
+  font-size: 20px;
+  color: #b1b1b1;
 }
 /* NOTIFICATIONS */
 .container aside .notifications {
@@ -62,6 +71,28 @@ body {
   background: #fff;
   flex-grow: 1;
 }
+
+.container aside .contacts .contact-image {
+  border-bottom: 2px solid #f5f5f5;
+  padding: 10px;
+}
+
+.container aside .contacts .contact-image:last-child {
+  border: none;
+}
+
+.container aside .contacts .contact-image a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.container aside .contacts .contact-image img {
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 /* RIGHT */
 .container main {
   flex-basis: 65%;
@@ -72,6 +103,32 @@ body {
 .container main .header {
   background: #eaeaea;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container main .header .user-image {
+  display: flex;
+  align-items: center;
+}
+
+.container main .header .user-image img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container main .header .icons-right {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container main .header .icons-right i {
+  font-size: 20px;
+  color: #b1b1b1;
 }
 /* CENTRAL */
 .container main .central {

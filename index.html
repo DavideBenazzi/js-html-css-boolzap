@@ -22,31 +22,62 @@
         <div class="user">
           <div class="user-image">
             <img :src="'./img/avatar' + user.avatar + '.jpg'" alt="user avatar">
+            <span>{{ user.name }}</span>
           </div>
-          <div class="icons">
-            <i class="fas fa-circle-notch"></i>
-            <i class="fas fa-comment-alt"></i>
-            <i class="fas fa-ellipsis-v"></i>
+          <div class="icons-left">
+            <a href="#">
+              <i class="fas fa-circle-notch"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-comment-alt"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
           </div>
         </div>
         <!-- NOTIFICATIONS -->
         <div class="notifications">
-
+          <i class="fas fa-bell-slash"></i>
+          <span>Ricevi notifiche di nuovi messaggi</span>
+          <a href="#">
+            Attiva notifiche desktop
+          </a>
         </div>
         <!-- SEARCH -->
         <div class="search">
-
+          <input type="text" placeholder='Cerca o inizia una nuova chat'>
+          <i class='fas fa-search'></i>
         </div>
         <!-- CONTACTS -->
         <div class="contacts">
-
+          <div v-for='contact in contacts' class="contact-image">
+            <a href="#" >
+              <img :src="'./img/avatar' + contact.avatar + '.jpg'" :alt="contact.name +  ' avatar'">
+              <span>{{ contact.name }}</span>
+            </a>
+          </div>
         </div>
       </aside>
       <!-- RIGHT -->
       <main>
         <!-- HEADER -->
         <section class="header">
-
+          <div class="user-image">
+            <img :src="'./img/avatar' + contacts[0].avatar + '.jpg'" alt="user avatar">
+            <span>{{ contacts[0].name }}</span>
+          </div>
+          <div class="icons-right">
+            <a href="#">
+              <i class="fas fa-paperclip"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-smile"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+          </div>
         </section>
         <!-- CENTRAL -->
         <section class="central">
