@@ -38,6 +38,7 @@ body {
 .container aside .user .user-image {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .container aside .user .user-image img {
@@ -51,6 +52,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 10px;
 }
 
 .container aside .user .icons-left i {
@@ -112,13 +114,16 @@ body {
 .container aside .search .search-button input {
   width: 85%;
   border: 2px solid #f5f5f5;
+  border-radius: 4px;
   border-left: none;
   line-height: 30px;
   outline-color: #61f446;
+  padding-left: 10px;
 }
 
 .container aside .search .search-button input::placeholder {
   color: #dadadb;
+  padding-left: 10px;
 }
 
 /* CONTACTS */
@@ -130,6 +135,10 @@ body {
 .container aside .contacts .contact-image {
   border-bottom: 2px solid #f5f5f5;
   padding: 10px;
+}
+
+.container aside .contacts .contact-image:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .container aside .contacts .contact-image:last-child {
@@ -166,12 +175,19 @@ body {
 .container main .header .user-image {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .container main .header .user-image .user-detail {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.container main .header .user-image .user-detail p {
+  font-size: 12px;
+  color: #6B7376;
+  margin-top: 5px;
 }
 
 .container main .header .user-image img {
@@ -185,6 +201,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 10px;
 }
 
 .container main .header .icons-right i {
@@ -210,7 +227,23 @@ body {
   color: #b1b1b1;
 }
 
+.container main .footer a i {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #6b7376;
+}
+
 .container main .footer input {
   flex-grow: 1;
   margin: 0 10px;
+  line-height: 40px;
+  border: none;
+  border-radius: 4px;
+  outline-color: #61f446;
+  padding-left: 10px;
+}
+
+.container main .footer input::placeholder {
+  color: #767676;
+  padding-left: 10px;
 }
