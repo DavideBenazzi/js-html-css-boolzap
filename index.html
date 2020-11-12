@@ -20,7 +20,14 @@
       <aside>
         <!-- USER -->
         <div class="user">
-
+          <div class="user-image">
+            <img :src="'./img/avatar' + user.avatar + '.jpg'" alt="user avatar">
+          </div>
+          <div class="icons">
+            <i class="fas fa-circle-notch"></i>
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
         </div>
         <!-- NOTIFICATIONS -->
         <div class="notifications">

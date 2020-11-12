@@ -12,6 +12,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* UTILITY */
+.icons {
+  width: 15%;
+  font-size: 20px;
+  color: #b1b1b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .container {
   height: 95%;
@@ -23,11 +32,20 @@ body {
   flex-basis: 35%;
   display: flex;
   flex-direction: column;
+  border-right: 2px solid #d6d6d6;
 }
 /* USER */
 .container aside .user {
   background: #eaeaea;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container aside .user .user-image img {
+  height: 50px;
+  border-radius: 50%;
 }
 /* NOTIFICATIONS */
 .container aside .notifications {
