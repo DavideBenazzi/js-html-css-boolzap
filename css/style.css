@@ -60,12 +60,39 @@ body {
 .container aside .notifications {
   padding: 20px;
   background: #8EDAFC;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container aside .notifications i {
+  margin-right: 10px;
+  background: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  color: #8EDAFC;
+  padding: 10px;
+}
+
+.container aside .notifications .activate-notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 /* SEARCH */
 .container aside .search {
   padding: 20px;
   background: #FAFAFA;
 }
+
+.container aside .search .search-button button {
+  background: #fff;
+}
+
+.container aside .search .search-button input {
+  width: 95%;
+}
+
 /* CONTACTS */
 .container aside .contacts {
   background: #fff;
@@ -113,6 +140,12 @@ body {
   align-items: center;
 }
 
+.container main .header .user-image .user-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .container main .header .user-image img {
   height: 50px;
   border-radius: 50%;
@@ -140,4 +173,16 @@ body {
 .container main .footer {
   background: #f3eeea;
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container main .footer a {
+  font-size: 20px;
+  color: #b1b1b1;
+}
+
+.container main .footer input {
+  flex-grow: 1;
+  margin: 0 10px;
 }

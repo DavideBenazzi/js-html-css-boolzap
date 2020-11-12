@@ -39,15 +39,19 @@
         <!-- NOTIFICATIONS -->
         <div class="notifications">
           <i class="fas fa-bell-slash"></i>
-          <span>Ricevi notifiche di nuovi messaggi</span>
-          <a href="#">
-            Attiva notifiche desktop
-          </a>
+          <div class="activate-notifications">
+            <span>Ricevi notifiche di nuovi messaggi</span>
+            <a href="#">
+              Attiva notifiche desktop
+            </a>
+          </div>
         </div>
         <!-- SEARCH -->
         <div class="search">
-          <input type="text" placeholder='Cerca o inizia una nuova chat'>
-          <i class='fas fa-search'></i>
+          <div class="search-button">
+            <button type="button" name="search"><i class='fas fa-search'></i></button>
+            <input type="text" placeholder='Cerca o inizia una nuova chat'>            
+          </div>
         </div>
         <!-- CONTACTS -->
         <div class="contacts">
@@ -65,7 +69,10 @@
         <section class="header">
           <div class="user-image">
             <img :src="'./img/avatar' + contacts[0].avatar + '.jpg'" alt="user avatar">
-            <span>{{ contacts[0].name }}</span>
+            <div class="user-detail">
+              <span>{{ contacts[0].name }}</span>
+              <p>Ultimo accesso oggi alle 10.35</p>
+            </div>
           </div>
           <div class="icons-right">
             <a href="#">
@@ -85,7 +92,13 @@
         </section>
         <!-- FOOTER -->
         <section class="footer">
-
+          <a href="#">
+            <i class="fas fa-smile"></i>
+          </a>
+          <input type="text" placeholder='Scrivi un messaggio'>
+          <a href="#">
+            <i class="fas fa-microphone"></i>
+          </a>
         </section>
       </main>
     </div>
