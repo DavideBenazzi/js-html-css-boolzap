@@ -95,7 +95,12 @@
         </section>
         <!-- CENTRAL -->
         <section class="central">
-
+          <div v-for="(message , index) in contacts[indexContact].messages" class="contactMessage">
+            <div class="message">
+              <span>{{ message.message }}</span>
+              <p>{{ message.date }}</p>
+            </div>
+          </div>
         </section>
         <!-- FOOTER -->
         <section class="footer">

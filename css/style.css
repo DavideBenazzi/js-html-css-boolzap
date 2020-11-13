@@ -136,7 +136,7 @@ body {
 }
 
 .container aside .contacts .active {
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .container aside .contacts .contact-image {
@@ -220,6 +220,30 @@ body {
   background-image: url('../img/mine.jpg');
   flex-grow: 1;
   overflow-y: auto;
+}
+
+.container main .central .contactMessage {
+  display: flex;
+}
+
+.container main .central .contactMessage .message {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.container main .central .contactMessage .message span {
+  align-self: center;
+}
+
+.container main .central .contactMessage .message p {
+  align-self: flex-end;
+  font-size: 10px;
 }
 /* FOOTER */
 .container main .footer {
