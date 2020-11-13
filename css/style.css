@@ -132,6 +132,11 @@ body {
 .container aside .contacts {
   background: #fff;
   flex-grow: 1;
+  overflow-y: auto;
+}
+
+.container aside .contacts .active {
+  background: rgba(0, 0, 0, 0.2); 
 }
 
 .container aside .contacts .contact-image {

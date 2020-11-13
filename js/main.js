@@ -94,7 +94,12 @@ var app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+        indexContact: 0,
     },
-    methods: {}
+    methods: {
+      getActive(index) {
+        this.indexContact = index;
+      },
+    },
 });

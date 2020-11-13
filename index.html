@@ -56,7 +56,12 @@
         </div>
         <!-- CONTACTS -->
         <div class="contacts">
-          <div v-for='contact in contacts' class="contact-image">
+          <div
+          v-for='(contact , index) in contacts'
+          class="contact-image"
+          :class="index === indexContact ? 'active' : ''"
+          @click="getActive(index)"
+          >
             <a href="#" >
               <img :src="'./img/avatar' + contact.avatar + '.jpg'" :alt="contact.name +  ' avatar'">
               <span>{{ contact.name }}</span>
