@@ -74,9 +74,9 @@
         <!-- HEADER -->
         <section class="header">
           <div class="user-image">
-            <img :src="'./img/avatar' + contacts[0].avatar + '.jpg'" alt="user avatar">
+            <img :src="'./img/avatar' + contacts[indexContact].avatar + '.jpg'" :alt="contacts[indexContact].name +  ' avatar'">
             <div class="user-detail">
-              <span>{{ contacts[0].name }}</span>
+              <span>{{ contacts[indexContact].name }}</span>
               <p>Ultimo accesso oggi alle 10.35</p>
             </div>
           </div>
