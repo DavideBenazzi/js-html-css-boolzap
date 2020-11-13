@@ -220,25 +220,42 @@ body {
   background-image: url('../img/mine.jpg');
   flex-grow: 1;
   overflow-y: auto;
+  padding: 50px;
 }
 
 .container main .central .contactMessage {
   display: flex;
 }
 
+.container main .central .startLine {
+  justify-content: flex-start;
+}
+
+.container main .central .endLine {
+  justify-content: flex-end;
+}
+
+.container main .central .endLine .message {
+  background: #D5F9BA;
+}
+
+.container main .central .startLine .message {
+  background: #fff;
+}
+
 .container main .central .contactMessage .message {
   display: flex;
   justify-content: space-between;
-  background: #fff;
   width: 40%;
   height: 50px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 .container main .central .contactMessage .message span {
   align-self: center;
+  padding-left: 10px;
 }
 
 .container main .central .contactMessage .message p {

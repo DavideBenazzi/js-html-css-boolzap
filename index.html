@@ -95,7 +95,7 @@
         </section>
         <!-- CENTRAL -->
         <section class="central">
-          <div v-for="(message , index) in contacts[indexContact].messages" class="contactMessage">
+          <div v-for="(message , index) in contacts[indexContact].messages" class="contactMessage" :class="message.status === 'sent' ? 'endLine' : 'startLine'">
             <div class="message">
               <span>{{ message.message }}</span>
               <p>{{ message.date }}</p>
