@@ -267,6 +267,20 @@ body {
   font-size: 10px;
   color: #B6B9BB;
 }
+
+.container main .central .contactMessage .message .hideShow {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-60%);
+  color: #B6B9BB;
+}
+
+.container main .central .contactMessage .message:hover .hideShow {
+  display: block;
+}
 /* FOOTER */
 .container main .footer {
   background: #f3eeea;
