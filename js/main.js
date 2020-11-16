@@ -106,7 +106,7 @@ var app = new Vue({
     submit() {
       if (this.userMessage.trim() !== '') {
         this.newMessage = {
-          date: dayjs().format(),
+          date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
           message: this.userMessage,
           status: 'sent',
         };
