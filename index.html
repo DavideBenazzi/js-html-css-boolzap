@@ -56,6 +56,7 @@
         </div>
         <!-- CONTACTS -->
         <div class="contacts">
+          <!-- @CLICK GETACTIVE FUNCTION -->
           <div
           v-for='(contact , index) in contacts'
           class="contact-image"
@@ -108,6 +109,7 @@
           <a href="#">
             <i class="far fa-smile"></i>
           </a>
+          <!-- KEYUP:ENTER AND SUBMIT FUNCTION -->
           <input type="text" placeholder='Scrivi un messaggio' v-model='userMessage' @keyup.enter="submit">
           <a href="#">
             <i class="fas fa-microphone"></i>

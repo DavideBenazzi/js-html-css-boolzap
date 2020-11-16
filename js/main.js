@@ -100,9 +100,11 @@ var app = new Vue({
       newMessage: {},
   },
   methods: {
+    // @CLICK FUNCTION SET CLASS:ACTIVE ON FOCUS CONTACT
     getActive(index) {
       this.indexContact = index;
     },
+    // KEYUP:ENTER FUNCTION THAT SUBMIT THE MESSAGE AND CREATE THE REPLY MESSAGE DELAYED 1 SEC
     submit() {
       if (this.userMessage.trim() !== '') {
         this.newMessage = {
