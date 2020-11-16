@@ -121,6 +121,7 @@ body {
   line-height: 30px;
   outline-color: #61f446;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container aside .search .search-button input::placeholder {
@@ -246,7 +247,7 @@ body {
 .container main .central .contactMessage .message {
   position: relative;
   width: 40%;
-  height: 50px;
+  min-height: 50px;
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
@@ -258,8 +259,10 @@ body {
 .container main .central .contactMessage .message span {
   font-size: 14px;
   align-self: flex-start;
+  max-width: 320px;
   padding-left: 10px;
   margin-top: 10px;
+  word-wrap: break-word;
 }
 
 .container main .central .contactMessage .message p {
@@ -308,6 +311,7 @@ body {
   border-radius: 4px;
   outline-color: #61f446;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container main .footer input::placeholder {
