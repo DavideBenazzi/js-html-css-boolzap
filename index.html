@@ -108,13 +108,15 @@
           <a href="#">
             <i class="far fa-smile"></i>
           </a>
-          <input type="text" placeholder='Scrivi un messaggio'>
+          <input type="text" placeholder='Scrivi un messaggio' v-model='userMessage' @keyup.enter="submit">
           <a href="#">
             <i class="fas fa-microphone"></i>
           </a>
         </section>
       </main>
     </div>
+    <!-- DAY.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js" charset="utf-8"></script>
     <!-- JAVASCRIPT -->
     <script src="./js/main.js" charset="utf-8"></script>
   </body>
