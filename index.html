@@ -81,7 +81,7 @@
             <img :src="'./img/avatar' + contacts[indexContact].avatar + '.jpg'" :alt="contacts[indexContact].name +  ' avatar'">
             <div class="user-detail">
               <span>{{ contacts[indexContact].name }}</span>
-              <p>Ultimo accesso oggi alle 10.35</p>
+              <p>Ultimo accesso {{ contacts[indexContact].timeResponse }}</p>
             </div>
           </div>
           <!-- ICON RIGHT -->
@@ -99,7 +99,11 @@
         </section>
         <!-- CENTRAL -->
         <section class="central">
-          <div v-for="(message , index) in contacts[indexContact].messages" class="contactMessage" :class="message.status === 'sent' ? 'endLine' : 'startLine'">
+          <div
+          v-for="(message , index) in contacts[indexContact].messages"
+          class="contactMessage"
+          :class="message.status === 'sent' ? 'endLine' : 'startLine'"
+          >
             <div class="message">
               <span>{{ message.message }}</span>
               <p>{{ message.date }}</p>
