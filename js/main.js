@@ -98,6 +98,7 @@ var app = new Vue({
       indexContact: 0,
       userMessage: '',
       newMessage: {},
+      visible: '',
   },
   methods: {
     // @CLICK FUNCTION SET CLASS:ACTIVE ON FOCUS CONTACT
@@ -123,6 +124,16 @@ var app = new Vue({
           this.contacts[this.indexContact].messages.push(this.newMessage);
         }, 1000);
       };
+    },
+    // KEYUP SEARCH FUNCTION WITH TRIM AND INCLUDES
+    search() {
+      this.contacts.forEach( (contact , i) => {
+        if ( contact.name.toLowerCase().includes( this.visible.trim().toLowerCase() ) ) {
+          contact.visible = true;
+        } else {
+          contact.visible = false;
+        };
+      });
     },
   },
 });

@@ -59,6 +59,10 @@ body {
   font-size: 25px;
   color: #b1b1b1;
 }
+
+.container aside .user .icons-left i:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 /* NOTIFICATIONS */
 .container aside .notifications {
   padding: 15px;
@@ -216,6 +220,10 @@ body {
   font-size: 25px;
   color: #b1b1b1;
 }
+
+.container main .header .icons-right i:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 /* CENTRAL */
 .container main .central {
   background-image: url('../img/mine.jpg');
@@ -301,6 +309,10 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   color: #6b7376;
+}
+
+.container main .footer a i:hover {
+  color: orange;
 }
 
 .container main .footer input {
